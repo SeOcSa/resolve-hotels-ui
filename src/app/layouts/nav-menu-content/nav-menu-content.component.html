@@ -1,0 +1,6 @@
+  <mat-nav-list>
+    <mat-list-item class="parent" *ngFor="let menuItem of menuItems">
+      <span class="full-width" [routerLink]="menuItem.routerLink">{{menuItem.label}}</span>
+      <mat-icon mat-list-icon>{{menuItem.icon}}</mat-icon>
+    </mat-list-item>
+  </mat-nav-list>
